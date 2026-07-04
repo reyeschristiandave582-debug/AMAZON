@@ -10,7 +10,7 @@ const MainLogo = () => {
     >
       <img 
         src="https://i.imgur.com/0PEVpuA.png" 
-        alt="Sephora Logo" 
+        alt="Amazon Logo" 
         className="h-10 sm:h-15 w-20 object-contain transition-all duration-700 hover:brightness-120"
       />
     </div>
