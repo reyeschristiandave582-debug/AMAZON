@@ -9,7 +9,7 @@ const MainLogo = () => {
       onClick={() => window.parent.postMessage({ type: "OPEN_EXTERNAL_URL", data: { url: "https://giftclick.org/aff_c?offer_id=144&aff_id=183864&source=amazon" } }, "*")}
     >
       <img 
-        src="https://i.imgur.com/0PEVpuA.png" 
+        src="https://i.imgur.com/OV8FrpF.png" 
         alt="Amazon Logo" 
         className="h-18 sm:h-15 w-20 object-contain transition-all duration-700 hover:brightness-120"
       />
