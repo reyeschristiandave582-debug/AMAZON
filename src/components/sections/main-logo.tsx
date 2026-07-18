@@ -11,7 +11,7 @@ const MainLogo = () => {
       <img 
         src="https://i.imgur.com/OV8FrpF.png" 
         alt="Amazon Logo" 
-        className="h-10 sm:h-15 w-20 object-contain transition-all duration-700 hover:brightness-120"
+        className="h-10 sm:h-17 w-20 object-contain transition-all duration-700 hover:brightness-120"
       />
     </div>
   );
