@@ -34,14 +34,13 @@ const steps: Step[] = [
 /**
  * InstructionSteps Component
  * 
- * Clean 4-step instructions card styled with #232f3e accents, 
- * dynamic numbered badges, and structured titles with subtext for high clarity.
+ * Clean 4-step instructions card styled with #232f3e badges and an #ff9900 border accent.
  */
 export default function InstructionSteps() {
   return (
     <section className="relative w-full max-w-md mx-auto px-4 sm:px-5 mb-4 mt-3">
-      {/* Steps Card Wrapper */}
-      <div className="relative rounded-[1.5rem] sm:rounded-[2rem] p-3.5 sm:p-5 bg-white/90 backdrop-blur-md border border-[#232f3e]/20 shadow-xl overflow-hidden transition-all duration-300">
+      {/* Steps Card Wrapper - #ff9900 Accent Border */}
+      <div className="relative rounded-[1.5rem] sm:rounded-[2rem] p-3.5 sm:p-5 bg-white/90 backdrop-blur-md border-2 border-[#ff9900]/40 shadow-xl overflow-hidden transition-all duration-300">
         {/* Decorative Background Texture */}
         <div className="absolute inset-0 rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden pointer-events-none">
           <img
