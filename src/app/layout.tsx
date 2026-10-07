@@ -9,16 +9,16 @@ export const metadata: Metadata = {
   description: "Participate in the Panera Bread Rewards program and get a chance to claim a $100 gift card.",
     icons: {
     icon: [
-      { url: "https://i.imgur.com/yub5B1C.png", type: "image/png" },
+      { url: "https://i.imgur.com/3UQb21z.png", type: "image/png" },
     ],
-    shortcut: "https://i.imgur.com/yub5B1C.png",
+    shortcut: "https://i.imgur.com/3UQb21z.png",
     apple: [
-      { url: "https://i.imgur.com/yub5B1C.png", sizes: "180x180", type: "image/png" },
+      { url: "https://i.imgur.com/3UQb21z.png", sizes: "180x180", type: "image/png" },
     ],
     other: [
       {
         rel: "apple-touch-icon-precomposed",
-        url: "https://i.imgur.com/yub5B1C.png",
+        url: "https://i.imgur.com/3UQb21z.png",
       },
     ],
   },
