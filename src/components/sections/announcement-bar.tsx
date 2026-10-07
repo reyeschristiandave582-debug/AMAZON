@@ -9,25 +9,26 @@ interface NotificationItem {
 }
 
 const firstNames = [
-  "Liam", "Emma", "Noah", "Olivia", "William", "Ava", "James", "Isabella", "Oliver", "Sophia",
-  "Elijah", "Charlotte", "Lucas", "Mia", "Mason", "Amelia", "Ethan", "Harper", "Evelyn", "Logan",
-  "Abigail", "Daniel", "Emily", "Jacob", "Ella", "Jackson", "Elizabeth", "Levi", "Camila", "Sebastian",
-  "Sienna", "Mateo", "Scarlett", "Jack", "Victoria", "Owen", "Madison", "Theodore", "Luna", "Aiden",
-  "Grace", "Samuel", "Chloe", "Joseph", "Penelope", "John", "Layla", "David", "Riley", "Wyatt"
+  "Alexander", "Sophia", "Benjamin", "Isabella", "Mason", "Charlotte", "Ethan", "Amelia",
+  "Michael", "Harper", "James", "Evelyn", "Elijah", "Abigail", "Daniel", "Emily",
+  "Matthew", "Elizabeth", "Aiden", "Mila", "Liam", "Ella", "David", "Avery",
+  "Joseph", "Sofia", "Jackson", "Camila", "Samuel", "Aria", "Sebastian", "Scarlett",
+  "Henry", "Victoria", "Andrew", "Madison", "Gabriel", "Luna", "Joshua", "Grace",
+  "Lucas", "Emma", "Oliver", "Ava", "Theodore", "Mia", "Leo", "Marcus"
 ];
 
-const lastInitials = ["A.", "C.", "E.", "G.", "H.", "K.", "N.", "O.", "R.", "S.", "T.", "U.", "W.", "Y.", "Z."];
+const lastInitials = ["B.", "D.", "F.", "H.", "J.", "K.", "L.", "M.", "P.", "R.", "S.", "T.", "W."];
 
 const actions = [
-  "just claimed a $750 Costco card!",
-  "just claimed a $750 Costco voucher!",
-  "just unlocked reward eligibility!",
+  "just claimed a $750 shopper card!",
+  "just verified reward eligibility!",
+  "just unlocked a $750 reward pass!",
   "just completed the review survey!",
-  "just verified eligibility!"
+  "just redeemed their $750 digital voucher!"
 ];
 
 const notifications: NotificationItem[] = Array.from({ length: 100 }, (_, i) => ({
-  name: `${firstNames[(i * 7) % firstNames.length]} ${lastInitials[(i * 5) % lastInitials.length]}`,
+  name: `${firstNames[(i * 11) % firstNames.length]} ${lastInitials[(i * 3) % lastInitials.length]}`,
   action: actions[i % actions.length]
 }));
 
@@ -62,9 +63,9 @@ export default function AnnouncementBar() {
 
   return (
     <>
-      {/* Top Banner Bar - Costco Blue with iOS Safe Area Padding & Security Badges */}
+      {/* Top Banner Bar - #232f3e Theme with iOS Safe Area Padding & Security Badges */}
       <div 
-        className="sticky top-0 z-50 w-full bg-[#005dab] border-b border-[#004b8a] pb-2 px-3 sm:px-4 shadow-sm backdrop-blur-md"
+        className="sticky top-0 z-50 w-full bg-[#232f3e] border-b border-[#131921] pb-2 px-3 sm:px-4 shadow-sm backdrop-blur-md"
         style={{ paddingTop: "calc(env(safe-area-inset-top, 0px) + 24px)" }}
       >
         {/* Background Sparkles */}
@@ -108,7 +109,7 @@ export default function AnnouncementBar() {
         </div>
       </div>
 
-      {/* Floating Social Proof Toast - Anchored top below banner so it never covers bottom CTA button */}
+      {/* Floating Social Proof Toast - Anchored top below banner */}
       {currentNotif && (
         <div
           className={`fixed top-14 left-3 right-3 sm:left-4 sm:right-auto z-[9999] max-w-[340px] mx-auto sm:mx-0 flex items-center gap-2 rounded-full border border-gray-200/90 bg-white/98 backdrop-blur-md px-3 py-1.5 shadow-md overflow-hidden transition-all duration-300 ease-in-out pointer-events-none ${
@@ -117,7 +118,7 @@ export default function AnnouncementBar() {
               : "-translate-y-3 opacity-0"
           }`}
         >
-          <div className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#005dab] text-white">
+          <div className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#232f3e] text-white">
             <Check className="w-2.5 h-2.5" strokeWidth={3} />
           </div>
 
