@@ -27,7 +27,7 @@ const AnimatedBackground = () => {
       {/* Image Overlays - Pushed to extreme edges with low opacity */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden opacity-[0.08] z-0">
         <Image
-          src="https://i.imgur.com/NyuhH3h.png"
+          src="https://i.imgur.com/kIA46VU.png"
           alt=""
           width={100}
           height={100}
